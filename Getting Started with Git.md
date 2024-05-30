@@ -81,6 +81,7 @@ https://git-scm.com/downlad/mac
 git --version
 git version 2.39.3 (Apple Git-146)
 
+<!-- Git command do you use to set your global user.name configuration? -->
 git config --global user.name "username"
 <!-- If need help with username on terminal type whoami -->
 git config --global user.email "your_email@example.com"
@@ -125,6 +126,7 @@ Creating a GitHub account
 *Push a Git Repository to a Code Hosting Provider*
 echo "#training-joe" >> README.md
 
+
 git init
 git add README.md
 git commit -m "first terminal commit"
@@ -140,9 +142,10 @@ echo "#training-joe" >> pikachoo.md
 -------------------------------
 Basic Commands of Everyday Git - 35m
 -------------------------------
+<!-- Git command shows you the changes you've staged that will go into your next commit? -->
+git diff --staged
 
-
-
+<!-- What are the three stages of a file? -->
 
 
 
@@ -152,11 +155,68 @@ Extended Commands of Everyday Git - 46m
 -------------------------------
 
 
+<!-- Which Git commands create a new branch and checks out to it at the same time? -->
+git checkout -b banch_name
+
+
+git commit - m "rename README.md"
+
+<!-- Change branches with checkout -->
+git checkout master
+<!-- will not be switched to branch 'master' -->
+
+working with branches:
+    git add . 
+    git stash
+    git stash list
+
+<!-- create a new file -->
+touch cold_brew
+<!-- open ^ in text editor -->
+code .
+
+*merge commits*
 
 
 
 
+*reset commits*
 
+Three optinos of Git Reset
+
+git reset --soft
+    will commit(s) back to staging area 
+
+git reset --mixed
+    will commit(s) back to working directory 
+
+git reset --hard
+    moves change to trash, if you do not want to keep anything and start over
+
+git log --oneline
 
 -------------------------------
 -------------------------------
+
+*joe questions check*
+
+Which Git command is used to move a file from the staging area to the .git directory?
+git commit  'tick'
+
+Which Git command skips the staging area when adding a change from our working directory?
+git commit -a -m "commit message" 'tick'
+
+Which command prompt command returns your current folder path location?
+pwd 'tick'
+
+Which statement is true regarding branches?
+A branch is a pointer to a specific commit in your project 'tick'
+
+
+
+*random notes*
+branch.main.remote=origin
+
+git add . 
+git stash
+git stash list
